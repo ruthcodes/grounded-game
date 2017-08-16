@@ -18,7 +18,6 @@ def morning():
         why = "'Why are you asleep in your clothes? Did you get drunk last night?\n"
         grounded(why)
 
-
 def squeak():
     print "As you walk along the hallway towards your room, the floorboards make a loud squeak.\n"
     print "You're right outside your mum's room!\n"
@@ -150,7 +149,6 @@ def backgarden():
             choice2 = raw_input(room_flair)
 
 # game entry/exit functions
-
 def grounded(why):
     print why, "You're grounded!"
     exit(0)
