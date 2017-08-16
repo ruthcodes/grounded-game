@@ -22,3 +22,4 @@ def handle_choice(removed, room_flair):
     else:
         pass
     return choice
+
