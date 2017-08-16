@@ -1,13 +1,13 @@
-
-
 # splits input into list ('remove hat' to ['remove', 'hat'])
 # pops off the last word in the list and returns it
+
 def remove_word(sentence):
     removing = str.split(sentence)
     return removing.pop()
 
 # check if clothes list is empty
 # check if choice is a valid option, then execute
+
 def naked(edited_choice):
     if not clothes:
         print "Can't remove any more clothes, you're naked."
@@ -21,6 +21,7 @@ def naked(edited_choice):
 # checks if pyjamas list has variables
 # checks if clothes list is empty
 # puts pyjamas in list if input is correct and above are both true
+
 def add_clothes(choice):
     edited_choice = remove_word(choice)
     if pyjamas:
@@ -42,6 +43,7 @@ def add_clothes(choice):
 # changes 'remove item' to 'item'
 # prevents removing certain items before others
 # otherwise, runs naked() to remove item or warn of invalid input
+
 def remove_clothes(choice):
     edited_choice = remove_word(choice)
     if edited_choice == 'socks' and 'shoes' in clothes:
